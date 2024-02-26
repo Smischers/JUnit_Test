@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- In dieser xml Datei wird alles zentral konfiguriert und geändert -->
+
+    <groupId>org.example</groupId>                  <!-- Hier frei wählbar, normal reverse URL -->
+    <artifactId>Exercise_1</artifactId>             <!-- Hier frei wählbar -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Properties: Einstellen der standard Version von Maven und Java, die genutzt werden sollen -->
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- Dependencies: liste von libraries die zum kompilieren benötigt werden -->
+    <!-- Libaries holt sich maven von mvnrepository.com (wenn es lokal nicht gefunden wird -->
+    <!-- Dort findet sich ein fertiger dependencys abschnitt, der kopiert werden kann -->
+    <!-- Es können auch eigene repos bei mvnrepository.com hinzugefügt werden -->
+
+
+    <dependencies>
+        <!-- API: Stellt features zur Verfügung, wie wir Tests schreiben -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Engine: Um die Tests ausführen zu können  -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
